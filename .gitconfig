@@ -1,0 +1,9 @@
+[credential]
+	helper = cache --timeout=525949
+[user]
+	name = Kevin Phillips
+	email = kphillips86@gmail.com
+[color]
+	ui = auto
+[push]
+	default = simple

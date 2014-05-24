@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# initialize and update submodules
+git submodule init
+git submodule update
+
+# working directory
+PWD=$(pwd)
+# array of refs
+REFS=(".vim" ".vimrc" ".gitconfig" ".bash-git-prompt" ".tmuxinator" ".tmux.conf" ".tmuxinator.bash" ".bashrc")
+
+# loop through refs, move to backup if exists, create symlink
+for i in "${REFS[@]}"
+do
+    if [ -f $HOME/$i ] || [ -d $HOME/$i ] && [ ! -h $HOME/$i ]; then
+        mv -f $HOME/$i $HOME/$i-bkup
+    fi
+    if [ -d $HOME/$i ]; then
+        ln -sf $PWD/$i $HOME
+    else
+        ln -sf $PWD/$i $HOME/$i
+    fi
+done
