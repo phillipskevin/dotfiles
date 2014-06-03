@@ -27,4 +27,4 @@ windows:
         - vim
         - gulp
         - # empty - for git
-  - server: nodemon ~/dev/express/app.js
+  - server: nodemon ~/dev/express/bin/www
