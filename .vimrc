@@ -158,3 +158,5 @@ au BufNewFile,BufRead *.mustache set filetype=html
 
 " use css syntax on stylus
 au BufNewFile,BufRead *.styl set filetype=css
+
+set mouse=a
