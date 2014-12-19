@@ -7,3 +7,7 @@
 	ui = auto
 [push]
 	default = simple
+[alias]
+	p = pull
+	st = status
+	d = diff

@@ -120,8 +120,4 @@ export EDITOR='vim'
 source ~/.bash-git-prompt/gitprompt.sh
 source ~/.tmuxinator.bash
 
-alias gits='git status'
-alias gitp='git pull'
-alias gitd='git diff'
-
 export TERM="xterm-256color"
