@@ -121,3 +121,6 @@ source ~/.bash-git-prompt/gitprompt.sh
 source ~/.tmuxinator.bash
 
 export TERM="xterm-256color"
+
+export NVM_DIR="/home/kevin/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
