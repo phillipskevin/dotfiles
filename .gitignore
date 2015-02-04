@@ -1,1 +1,2 @@
 *.swp
+.tmuxinator/*.yml
