@@ -160,3 +160,5 @@ au BufNewFile,BufRead *.mustache set filetype=html
 au BufNewFile,BufRead *.styl set filetype=css
 
 set mouse=a
+
+let g:syntastic_javascript_checkers = ['eslint']
