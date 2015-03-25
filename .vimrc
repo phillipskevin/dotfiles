@@ -167,7 +167,7 @@ let g:syntastic_javascript_checkers = ['eslint']
 " CtrlP Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 " https://github.com/kien/ctrlp.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_map = '<c-p>'
+let g:ctrlp_map = '<C-P>'
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 'ra'
 set wildignore+=*/node_modules/*             " Kevin's list
