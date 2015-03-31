@@ -163,6 +163,9 @@ set mouse=a
 
 " Syntastic syuntax checker - https://github.com/scrooloose/syntastic
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_check_on_open = 1
+nnoremap <silent> <F4> :lopen<CR>
 
 " CtrlP Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 " https://github.com/kien/ctrlp.vim
