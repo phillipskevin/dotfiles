@@ -114,7 +114,7 @@ if ! shopt -oq posix; then
 fi
 
 set -o vi
-export PATH=$PATH:/home/kevin/tools/nginx1.5.13
+export PATH=$PATH
 export EDITOR='vim'
 
 source ~/.bash-git-prompt/gitprompt.sh
@@ -122,5 +122,5 @@ source ~/.tmuxinator.bash
 
 export TERM="xterm-256color"
 
-export NVM_DIR="/home/kevin/.nvm"
+export NVM_DIR="/Users/kevinphillips/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
