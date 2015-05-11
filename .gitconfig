@@ -11,3 +11,5 @@
 	p = pull
 	st = status
 	d = diff
+    forked = "!f() { git merge-base --fork-point origin/$1; }; f"
+    rev = "!f() { git rev-parse origin/$1; }; f"
