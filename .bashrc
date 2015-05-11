@@ -85,7 +85,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -alhF'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -124,3 +124,7 @@ export TERM="xterm-256color"
 
 export NVM_DIR="/Users/kevinphillips/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+nvm alias default stable
+nvm use default
+
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
