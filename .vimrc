@@ -186,3 +186,6 @@ let g:ctrlp_custom_ignore = {
   \ }
 " let g:ctrlp_user_command = 'find %s -type f'        " MacOSX/Linux
 " let g:ctrlp_user_command = 'dir %s /-n /b /s /a-d'  " Windows
+
+" turn off swap files
+set noswapfile
