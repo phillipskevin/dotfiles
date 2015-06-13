@@ -7,7 +7,7 @@ git submodule update
 # working directory
 PWD=$(pwd)
 # array of refs
-REFS=(".vim" ".vimrc" ".gitconfig" ".bash-git-prompt" ".tmuxinator" ".tmux.conf" ".tmuxinator.bash" ".bashrc" ".bash_profile")
+REFS=(".vim" ".vimrc" ".gitconfig" ".bash-git-prompt" ".tmux.conf" ".tmuxinator.bash" ".bashrc" ".bash_profile")
 
 # loop through refs, move to backup if exists, create symlink
 for i in "${REFS[@]}"
