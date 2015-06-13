@@ -136,3 +136,7 @@ export HOSTS="/private/etc/hosts"
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
+
+# fuck
+alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+alias FUCK='fuck'
