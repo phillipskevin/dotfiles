@@ -155,6 +155,7 @@ let NERDTreeShowBookmarks=1
 
 " use  html syntax on templates
 au BufNewFile,BufRead *.mustache set filetype=html
+au BufNewFile,BufRead *.ejs set filetype=js
 
 " use css syntax on stylus
 au BufNewFile,BufRead *.styl set filetype=css

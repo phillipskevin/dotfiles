@@ -130,7 +130,8 @@ nvm use default
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 
 #some path aliases
-export HOSTS="/private/etc/hosts"
+export HOSTS="/etc/hosts"
+export NGINX="/usr/local/etc/nginx/"
 
 # bash autocomplete for mac
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
