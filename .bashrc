@@ -114,7 +114,7 @@ if ! shopt -oq posix; then
 fi
 
 set -o vi
-export PATH=$PATH
+export PATH=$PATH:/Applications/phantomjs-2.0.0-macosx/bin
 export EDITOR='vim'
 
 source ~/.bash-git-prompt/gitprompt.sh
@@ -122,15 +122,14 @@ source ~/.tmuxinator.bash
 
 export TERM="xterm-256color"
 
-export NVM_DIR="/Users/kevinphillips/.nvm"
+export NVM_DIR="/Users/kevin/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 nvm alias default stable
 nvm use default
 
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+# export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 
 #some path aliases
-export HOSTS="/etc/hosts"
 export NGINX="/usr/local/etc/nginx/"
 
 # bash autocomplete for mac
@@ -141,3 +140,5 @@ fi
 # fuck
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 alias FUCK='fuck'
+
+alias ports='echo "SELECT DISTINCT process.name, listening.port, listening.address, process.pid FROM processes AS process JOIN listening_ports AS listening ON process.pid = listening.pid;" | osqueryi'
