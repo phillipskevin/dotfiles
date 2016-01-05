@@ -17,9 +17,9 @@ filetype plugin on
 " indenting
 filetype indent on
 set expandtab       "Use softtabstop spaces instead of tab characters for indentation - abbr et
-set shiftwidth=4    "Indent by 4 spaces when using >>, <<, == etc. - abbr sw
-set softtabstop=4   "Indent by 4 spaces when pressing <TAB> - abbr sts
-set tabstop=4       "Indent by 4 spaces when pressing <TAB> - abbr ts
+set shiftwidth=2    "Indent by 2 spaces when using >>, <<, == etc. - abbr sw
+set softtabstop=2   "Indent by 2 spaces when pressing <TAB> - abbr sts
+set tabstop=2       "Indent by 2 spaces when pressing <TAB> - abbr ts
 set smartindent     "Automatically inserts indentation in some cases
 set smarttab        "A <Tab> in front of a line inserts blanks according to 'shiftwidth'.  'tabstop' or 'softtabstop' is used in other places.  A <BS> will delete a 'shiftwidth' worth of space at the start of the line.
 " set autoindent      "Keep indentation from previous line - abbr ai
@@ -155,10 +155,14 @@ let NERDTreeShowBookmarks=1
 
 " use  html syntax on templates
 au BufNewFile,BufRead *.mustache set filetype=html
+au BufNewFile,BufRead *.stache set filetype=html
 au BufNewFile,BufRead *.ejs set filetype=js
+au BufNewFile,BufRead *.component set filetype=html
 
-" use css syntax on stylus
+" use css syntax on css preprocessors
 au BufNewFile,BufRead *.styl set filetype=css
+au BufNewFile,BufRead *.less set filetype=css
+au BufNewFile,BufRead *.scss set filetype=css
 
 set mouse=a
 
