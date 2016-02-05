@@ -121,10 +121,10 @@ nnoremap Y y$
 " nnoremap <M-C-h> z5l
 
 " easier switch to split
-" nmap <C-h> <C-w>h
-" nmap <C-l> <C-w>l
-" nmap <C-k> <C-w>k
-" nmap <C-j> <C-w>j
+nmap <C-h> <C-w>h
+nmap <C-l> <C-w>l
+nmap <C-k> <C-w>k
+nmap <C-j> <C-w>j
 
 " stop auto commenting
 " autocmd FileType * setlocal formatoptions-=c formatoptions-=r
@@ -155,8 +155,7 @@ let NERDTreeShowBookmarks=1
 
 " use  html syntax on templates
 au BufNewFile,BufRead *.mustache set filetype=html
-au BufNewFile,BufRead *.stache set filetype=html
-au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.ejs set filetype=js
 
 " use css syntax on stylus
 au BufNewFile,BufRead *.styl set filetype=css
