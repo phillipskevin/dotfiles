@@ -2,7 +2,7 @@
 call pathogen#infect()
 call pathogen#helptags()
 
-colorscheme jellybeans
+colorscheme lucius
 
 " colors
 set t_Co=256
