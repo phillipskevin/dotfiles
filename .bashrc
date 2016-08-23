@@ -114,7 +114,6 @@ if ! shopt -oq posix; then
 fi
 
 set -o vi
-export PATH=$PATH:/home/kevin/tools/nginx1.5.13
 export EDITOR='vim'
 
 source ~/.bash-git-prompt/gitprompt.sh
