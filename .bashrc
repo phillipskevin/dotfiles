@@ -119,11 +119,13 @@ export EDITOR='vim'
 source ~/.bash-git-prompt/gitprompt.sh
 source ~/.tmuxinator.bash
 
-export NVM_DIR="/home/kevin/.nvm"
+# export TERM="xterm-256color"
+
+export NVM_DIR="/Users/kevin/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 nvm alias default stable
-nvm use default
+nvm use stable
 
 # fuck
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
