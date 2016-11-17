@@ -2,7 +2,8 @@
 call pathogen#infect()
 call pathogen#helptags()
 
-colorscheme jellybeans
+colorscheme lucius
+LuciusDarkHighContrast
 
 " colors
 set t_Co=256
@@ -60,7 +61,7 @@ set number
 set nuw=6  " number width to 6 makes things look a little neater
 
 " word wrap, no
-set nowrap
+set wrap
 
 " wildmenu makes life better
 " set wildmenu wildmode=list:longest,full
@@ -146,6 +147,7 @@ nmap <C-j> <C-w>j
 " NERDtree - http://vim.sourceforge.net/scripts/script.php?script_id=1658
 nnoremap <silent> <F5> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
+let NERDTreeShowHidden=1
 
 " gundo - http://sjl.bitbucket.org/gundo.vim/
 " nnoremap <silent> <F6> :GundoToggle<CR>
@@ -167,10 +169,10 @@ au BufNewFile,BufRead *.scss set filetype=css
 set mouse=a
 
 " Syntastic syuntax checker - https://github.com/scrooloose/syntastic
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_open = 1
-nnoremap <silent> <F4> :lopen<CR>
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" nnoremap <silent> <F4> :lopen<CR>
 
 " CtrlP Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 " https://github.com/kien/ctrlp.vim
@@ -182,7 +184,6 @@ set wildignore+=*/node_modules/*             " Kevin's list
 set wildignore+=*\\node_modules\\*           " Kevin's list
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
-
 " let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',

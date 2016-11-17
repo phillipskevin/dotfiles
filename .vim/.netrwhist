@@ -1,6 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/kevinphillips/dev/projects/cars/www'
-let g:netrw_dirhist_2='/Users/kevinphillips/dev/projects/cars/m-cars-com-content'
-let g:netrw_dirhist_3='/Users/kevinphillips/dev/projects/cars/www-cars-com-static-cobrand'
-let g:netrw_dirhist_4='/Users/kevinphillips/Desktop'
+let g:netrw_dirhist_cnt =0
