@@ -59,6 +59,7 @@ set guioptions=
 " line numbers, yes
 set number
 set nuw=6  " number width to 6 makes things look a little neater
+hi LineNr term=bold cterm=bold ctermfg=2 guifg=Grey guibg=Grey90
 
 " word wrap, no
 set wrap
@@ -156,11 +157,10 @@ let NERDTreeShowHidden=1
 " autocmd FileType html map <F2> I<!-- 
 
 " use  html syntax on templates
-au BufNewFile,BufRead *.mustache set filetype=html
-au BufNewFile,BufRead *.ejs set filetype=js
+au BufNewFile,BufRead *.stache set filetype=html
 
-" use css syntax on stylus
-au BufNewFile,BufRead *.styl set filetype=css
+" use css syntax on less
+au BufNewFile,BufRead *.less set filetype=css
 
 set mouse=a
 
