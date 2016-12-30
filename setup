@@ -21,3 +21,7 @@ do
         ln -sf $PWD/$i $HOME/$i
     fi
 done
+
+# backup, symlink files not in $HOME
+mv -f /usr/local/etc/nginx/nginx.conf /usr/local/etc/nginx/nginx.conf-bkup
+ln -s $PWD/nginx.conf /usr/local/etc/nginx/nginx.conf
