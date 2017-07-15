@@ -121,8 +121,9 @@ source ~/.tmuxinator.bash
 
 # export TERM="xterm-256color"
 
-export NVM_DIR="/home/kevin/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 nvm alias default stable
 nvm use stable
@@ -130,3 +131,7 @@ nvm use stable
 # fuck
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 alias FUCK='fuck'
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#npm aliases
+alias npmi='rm -rf node_modules && npm i --no-shrinkwrap'
