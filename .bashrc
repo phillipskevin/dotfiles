@@ -130,3 +130,10 @@ nvm use stable
 # fuck
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 alias FUCK='fuck'
+alias yes='fuck'
+
+alias nolock="echo 'package-lock=false' >> .npmrc && echo 'package-lock.json' >> .gitignore && rm package-lock.json";
+alias steal="touch index.html index.js && echo $'<!doctype html>\n<script src=\"./node_modules/steal/steal.js\"></script>' > index.html && echo 'console.log(5);' > index.js"
+
+alias npmi='rm -rf node_modules/ && npm i'
+alias npmz='npm ls --depth=0'
