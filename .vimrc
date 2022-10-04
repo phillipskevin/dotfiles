@@ -162,6 +162,9 @@ au BufNewFile,BufRead *.stache set filetype=html
 " use css syntax on less
 au BufNewFile,BufRead *.less set filetype=css
 
+" use js syntax on typescript
+au BufNewFile,BufRead *.ts set filetype=javascript
+
 set mouse=a
 
 " Syntastic syuntax checker - https://github.com/scrooloose/syntastic

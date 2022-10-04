@@ -11,3 +11,7 @@
 	p = pull
 	st = status
 	d = diff
+[includeIf "gitdir:~/dev/yum/"]
+  path = ~/dev/yum/.gitconfig
+[includeIf "gitdir:~/dev/bitovi/"]
+  path = ~/dev/bitovi/.gitconfig

@@ -137,3 +137,9 @@ alias steal="touch index.html index.js && echo $'<!doctype html>\n<script src=\"
 
 alias npmi='rm -rf node_modules/ && npm i'
 alias npmz='npm ls --depth=0'
+
+alias dockerclean="docker system prune --volumes && docker images -q | xargs docker rmi -f"
+
+# add Go
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=~/dev/go
