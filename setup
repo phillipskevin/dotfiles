@@ -1,13 +1,10 @@
 #!/bin/bash
 
-# initialize and update submodules
-git submodule init
-git submodule update
-
 # working directory
 PWD=$(pwd)
+
 # array of refs
-REFS=(".vim" ".vimrc" ".gitconfig" ".bash-git-prompt" ".tmuxinator" ".tmux.conf" ".tmuxinator.bash" ".bashrc" ".bash_profile")
+REFS=(".gitconfig" ".bash-git-prompt" ".tmuxinator" ".tmux.conf" ".tmuxinator.bash" ".bashrc" ".bash_profile")
 
 # loop through refs, move to backup if exists, create symlink
 for i in "${REFS[@]}"
@@ -22,6 +19,15 @@ do
     fi
 done
 
+if [ -f $HOME/.config/nvim/init.vim ] || [ -d $HOME/.config/nvim/init.vim ] && [ ! -h $HOME/.config/nvim/init.vim ]; then
+    mv -f $HOME/.config/nvim/init.vim $HOME/.config/nvim/init.vim-bkup
+fi
+mkdir -p $HOME/.config/nvim
+ln -sf $PWD/init.vim $HOME/.config/nvim/init.vim
+
 # backup, symlink files not in $HOME
 sudo mv -f /etc/nginx/nginx.conf /etc/nginx/nginx.conf-bkup
 sudo ln -s $PWD/nginx.conf /etc/nginx/nginx.conf
+
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'

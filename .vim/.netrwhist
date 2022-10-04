@@ -1,4 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/kevin/dev/projects/kphil'
-let g:netrw_dirhist_2='/home/kevin/dev/projects/kphil/node_modules'
