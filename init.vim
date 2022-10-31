@@ -1,3 +1,9 @@
+" turn off swap files
+set noswapfile
+
+" enable line numbers
+set number
+
 " replay q macro with Q
 nnoremap Q @q
 
